@@ -18,8 +18,10 @@ class SEG:
             if r & 1:
                 r -= 1
                 ans = max(ans, self.tree[r])
+            print("query", "l =>", l, "r =>", r, "ans =>", ans, "tree =>", self.tree)
             l >>= 1
             r >>= 1
+
         return ans
 
 
